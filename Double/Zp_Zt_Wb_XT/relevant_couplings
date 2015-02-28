@@ -1,0 +1,10 @@
+Z' to XT
+  34 1.000000e-01 # grho0X23LT23L 
+  35 1.000000e-01 # grho0X23RT23R 
+
+X' decay
+  50 1.000000e-01 # gWX23LbL  
+
+T' decay  
+  56 1.000000e-01 # gZT23RtR 
+  57 1.000000e-01 # gZX23LtL 
