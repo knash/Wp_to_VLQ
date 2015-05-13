@@ -16,11 +16,11 @@
  set max_weight_ps_point 400  # number of PS to estimate the maximum for each event
 # 
 # specify the decay for the final state particles
-decay topo > z tt  / rho+ rho- rho0 , z > all all, ( t > w+ b, w+ > all all ), (t~ > w- b~, w- > all all)
+#decay topo > z tt  / rho+ rho- rho0 , z > all all, ( t > w+ b, w+ > all all ), (t~ > w- b~, w- > all all)
 decay t > w+ b, w+ > all all
 decay t~ > w- b~, w- > all all
-decay w+ > all all
-decay w- > all all
+#decay w+ > all all
+#decay w- > all all
 decay z > all all
 
 # running the actual code

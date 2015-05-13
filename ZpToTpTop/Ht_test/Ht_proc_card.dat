@@ -89,4 +89,4 @@ add process p p > rho0 t23 > t~ t h j
 add process p p > rho0 t23~ > t~ t h j
 #generate p p > rho0 > t23 t~, (t23 > h t  / rho+ rho- rho0, t > w+ b), t~ > w- b~
 #generate p p > rho0 > t23 t~ , w- > ferm ferm , w+ > ferm ferm , (  t23 > h t  / rho+ rho- rho0 , w- > ferm ferm , w+ > ferm ferm , ( t > w+ b   , w- > ferm ferm, w+ > ferm ferm ) ) , ( t~ > w- b~ , w- > ferm ferm, w+ > ferm ferm ) --no_warning=duplicate
-output Ht_MS_j
+output Ht

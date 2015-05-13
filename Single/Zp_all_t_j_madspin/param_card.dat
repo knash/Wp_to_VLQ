@@ -50,7 +50,7 @@ Block frblock
    36 1.000000e-01 # grho0T23LT23L 
    37 1.000000e-01 # grho0T23RT23R 
    38 1.000000e-01 # grho0T23LtL 
-   39 1.000000e-01 # grho0T23RtR 
+   39 0.000000e-01 # grho0T23RtR 
    40 1.000000e-01 # grho0B13LB13L 
    41 1.000000e-01 # grho0B13RB13R 
    42 5.500000e-01 # grhoprhomZ 
@@ -71,7 +71,7 @@ Block frblock
    57 1.000000e-01 # gZX23LtL 
    58 1.000000e-01 # gZX23RtR 
    59 1.000000e-01 # ghT23LtR 
-   60 1.000000e-01 # ghtLT23R 
+   60 0.000000e-01 # ghtLT23R 
    61 1.000000e-01 # ghX23LtR 
    62 1.000000e-01 # ghtLX23R 
 
@@ -84,11 +84,11 @@ Block mass
    15 1.777000e+00 # MTA 
    23 9.118760e+01 # MZ 
    25 1.250000e+02 # MH 
-  8000001 1.500000e+03 # MT23 
+  8000001 6.000000e+02 # MT23 
   8000002 6.000000e+02 # MB13 
   8000003 6.000000e+02 # MX53 
   8000004 6.000000e+02 # MX23 
-  9900113 2.500000e+03 # mrho0
+  9900113 1.800000e+03 # mrho0 
   9900213 1.800000e+03 # mrhop 
 ## Dependent parameters, given by model restrictions.
 ## Those values should be edited following the 
@@ -131,11 +131,15 @@ DECAY   6 1.508336e+00 # WT
 DECAY  23 2.495200e+00 # WZ 
 DECAY  24 2.085000e+00 # WW 
 DECAY  25 5.753088e-03 # WH 
-DECAY 8000001 1.000000e-03 # WT23 
+DECAY 8000001 1.000000e-03 # WT23
+#  BR             NDA  ID1    ID2   ...
+   3.333333e-01   2    5      24 # 
+   3.333333e-01   2    6      23 # 
+   3.333333e-01   2    6      25 # 
 DECAY 8000002 1.000000e-03 # WB13 
 DECAY 8000003 1.000000e-03 # WX53 
 DECAY 8000004 1.000000e-03 # WX23 
-DECAY 9900113 2.500000e+01 # wrho0 
+DECAY 9900113 1.000000e-03 # wrho0 
 DECAY 9900213 1.000000e-03 # wrhop 
 ## Dependent parameters, given by model restrictions.
 ## Those values should be edited following the 

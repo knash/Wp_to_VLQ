@@ -44,13 +44,13 @@ Block frblock
    30 1.000000e-01 # grho0X23LX23L 
    31 1.000000e-01 # grho0X23RX23R 
    32 1.000000e-01 # grho0X23LtL 
-   33 0.000000e-01 # grho0X23RtR 
+   33 1.000000e-01 # grho0X23RtR 
    34 1.000000e-01 # grho0X23LT23L 
    35 1.000000e-01 # grho0X23RT23R 
    36 1.000000e-01 # grho0T23LT23L 
    37 1.000000e-01 # grho0T23RT23R 
    38 1.000000e-01 # grho0T23LtL 
-   39 1.000000e-01 # grho0T23RtR 
+   39 0.000000e-00 # grho0T23RtR 
    40 1.000000e-01 # grho0B13LB13L 
    41 1.000000e-01 # grho0B13RB13R 
    42 5.500000e-01 # grhoprhomZ 
@@ -67,7 +67,7 @@ Block frblock
    53 1.000000e-01 # gWX53LtL 
    54 1.000000e-01 # gWX53RtR 
    55 1.000000e-01 # gZT23LtL 
-   56 0.000000e-01 # gZT23RtR 
+   56 1.000000e-01 # gZT23RtR 
    57 1.000000e-01 # gZX23LtL 
    58 1.000000e-01 # gZX23RtR 
    59 1.000000e-01 # ghT23LtR 
@@ -83,13 +83,13 @@ Block mass
     6 1.720000e+02 # MT 
    15 1.777000e+00 # MTA 
    23 9.118760e+01 # MZ 
-   25 1.250000e+02 # MH 
-  8000001 1.500000e+03 # MT23 
-  8000002 6.000000e+02 # MB13 
-  8000003 6.000000e+02 # MX53 
-  8000004 6.000000e+02 # MX23 
-  9900113 2.500000e+03 # mrho0
-  9900213 1.800000e+03 # mrhop 
+   25 1.200000e+02 # MH 
+  8000001 7.000000e+02 # MT23 
+  8000002 7.000000e+02 # MB13 
+  8000003 7.000000e+02 # MX53 
+  8000004 7.000000e+02 # MX23 
+  9900113 1.581000e+03 # mrho0 
+  9900213 1.581000e+03 # mrhop 
 ## Dependent parameters, given by model restrictions.
 ## Those values should be edited following the 
 ## analytical expression. MG5 ignores those values 
@@ -131,12 +131,12 @@ DECAY   6 1.508336e+00 # WT
 DECAY  23 2.495200e+00 # WZ 
 DECAY  24 2.085000e+00 # WW 
 DECAY  25 5.753088e-03 # WH 
-DECAY 8000001 1.000000e-03 # WT23 
-DECAY 8000002 1.000000e-03 # WB13 
-DECAY 8000003 1.000000e-03 # WX53 
-DECAY 8000004 1.000000e-03 # WX23 
-DECAY 9900113 2.500000e+01 # wrho0 
-DECAY 9900213 1.000000e-03 # wrhop 
+DECAY 8000001 5.000000e+01 # WT23 
+DECAY 8000002 5.000000e+01 # WB13 
+DECAY 8000003 5.000000e+01 # WX53 
+DECAY 8000004 5.000000e+01 # WX23 
+DECAY 9900113 3.470000e+01 # wrho0 
+DECAY 9900213 4.370000e+01 # wrhop 
 ## Dependent parameters, given by model restrictions.
 ## Those values should be edited following the 
 ## analytical expression. MG5 ignores those values 

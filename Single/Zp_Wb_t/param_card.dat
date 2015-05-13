@@ -83,12 +83,12 @@ Block mass
     6 1.720000e+02 # MT 
    15 1.777000e+00 # MTA 
    23 9.118760e+01 # MZ 
-   25 1.200000e+02 # MH 
-  8000001 7.000000e+02 # MT23 
+   25 1.250000e+02 # MH 
+  8000001 1.500000e+03 # MT23 
   8000002 7.000000e+02 # MB13 
   8000003 7.000000e+02 # MX53 
   8000004 7.000000e+02 # MX23 
-  9900113 1.581000e+03 # mrho0 
+  9900113 2.500000e+03 # mrho0 
   9900213 1.581000e+03 # mrhop 
 ## Dependent parameters, given by model restrictions.
 ## Those values should be edited following the 
@@ -131,11 +131,11 @@ DECAY   6 1.508336e+00 # WT
 DECAY  23 2.495200e+00 # WZ 
 DECAY  24 2.085000e+00 # WW 
 DECAY  25 5.753088e-03 # WH 
-DECAY 8000001 5.000000e+01 # WT23 
+DECAY 8000001 1.000000e-03 # WT23 
 DECAY 8000002 5.000000e+01 # WB13 
 DECAY 8000003 5.000000e+01 # WX53 
 DECAY 8000004 5.000000e+01 # WX23 
-DECAY 9900113 3.470000e+01 # wrho0 
+DECAY 9900113 2.500000e+01 # wrho0 
 DECAY 9900213 4.370000e+01 # wrhop 
 ## Dependent parameters, given by model restrictions.
 ## Those values should be edited following the 
