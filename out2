@@ -1,0 +1,197 @@
+-bash-4.1$ ./Zp_Zt_t_madspin/bin/generate_events test2
+launch in debug mode
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 5.2.2.2                                  *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /afs/desy.de/user/u/usaiem/xxl-af-cms/gen2/test/Zp_Zt_t_madspin/Cards/me5_configuration.txt  
+INFO: load configuration from /afs/desy.de/user/u/usaiem/xxl-af-cms/gen2/MG5_aMC_v2_2_2/input/mg5_configuration.txt  
+INFO: load configuration from /afs/desy.de/user/u/usaiem/xxl-af-cms/gen2/test/Zp_Zt_t_madspin/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+generate_events test2
+The following switches determine which programs are run:
+ 1 Run the pythia shower/hadronization:                   pythia=NOT INSTALLED
+ 2 Run PGS as detector simulator:                            pgs=NOT INSTALLED
+ 3 Run Delphes as detector simulator:                    delphes=NOT INSTALLED
+ 4 Decay particles with the MadSpin module:              madspin=ON
+ 5 Add weight to events based on coupling parameters:   reweight=OFF
+  Either type the switch number (1 to 5) to change its default setting,
+  or set any switch explicitly (e.g. type 'madspin=ON' at the prompt)
+  Type '0', 'auto', 'done' or just press enter when you are done.
+ [0, 4, 5, auto, done, madspin=ON, madspin=OFF, madspin, reweight=ON, ... ][60s to answer] 
+>
+Do you want to edit a card (press enter to bypass editing)?
+  1 / param      : param_card.dat
+  2 / run        : run_card.dat
+  3 / madspin    : madspin_card.dat
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [0, done, 1, param, 2, run, 3, madspin, enter path][60s to answer] 
+>
+Generating 10 events with run name test2
+survey  test2 
+INFO: compile directory 
+run_card missed argument lhe_version. Takes default: 2.0
+Using random number seed offset = 75
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+    P0_qq_t23tx 
+INFO:  Idle: 0,  Running: 1,  Completed: 0 [ current time: 14h25 ] 
+INFO: End survey 
+refine 10
+Creating Jobs
+INFO: Refine results to 10 
+    P0_qq_t23tx 
+INFO: Combining runs 
+INFO: finish refine 
+refine 10
+Creating Jobs
+INFO: Refine results to 10 
+    P0_qq_t23tx 
+INFO: Combining runs 
+INFO: finish refine 
+combine_events
+INFO: Combining Events 
+  === Results Summary for run: test2 tag: tag_1 ===
+
+     Cross-section :   313.4 +- 1.556 pb
+     Nb of events :  10
+ 
+running syscalc on mode parton
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+decay_events -from_cards
+INFO: Running MadSpin 
+INFO: This functionality allows for the decay of resonances 
+INFO: in a .lhe file, keeping track of the spin correlation effets. 
+INFO: BE AWARE OF THE CURRENT LIMITATIONS: 
+INFO:   (1) Only a succession of 2 body decay are currently allowed 
+************************************************************
+*                                                          *
+*           W E L C O M E  to  M A D S P I N               *
+*                                                          *
+************************************************************
+INFO: Extracting the banner ... 
+INFO: process: p p > rho0 > topo tt 
+INFO: options:  
+INFO: detected model: onerho. Loading... 
+set max_weight_ps_point 400  # number of PS to estimate the maximum for each event
+decay topo > z tt  / rho+ rho- rho0 , z > all all, ( t > w+ b, w+ > all all ), (t~ > w- b~, w- > all all)
+decay t > w+ b, w+ > all all
+decay t~ > w- b~, w- > all all
+decay w+ > all all
+decay w- > all all
+decay z > all all
+launch
+INFO: Will use seed 829009150 
+INFO: generating Madspin matrix element 
+INFO: We need to recalculate the branching fractions for t~,w-,w+,t23~,t,t23,z 
+INFO: using the FeynRules formula present in the model (arXiv:1402.1178) 
+WARNING: The LO estimate for the width of particle 8000001  
+WARNING: differs from the one in the banner by 99 percent  
+INFO:    
+INFO: decay channels for t~ : ( width = 1.466877 GeV ) 
+INFO:        BR                 d1  d2 
+INFO:    1.000000e+00            b~  w-  
+INFO:    
+INFO:    
+INFO: decay channels for w- : ( width = 2.00278 GeV ) 
+INFO:        BR                 d1  d2 
+INFO:    3.333609e-01            s  c~  
+INFO:    3.333609e-01            d  u~  
+INFO:    1.111203e-01            mu-  vm~  
+INFO:    1.111203e-01            e-  ve~  
+INFO:    1.110377e-01            ta-  vt~  
+INFO:    
+INFO:    
+INFO: decay channels for w+ : ( width = 2.00278 GeV ) 
+INFO:        BR                 d1  d2 
+INFO:    3.333609e-01            s~  c  
+INFO:    3.333609e-01            d~  u  
+INFO:    1.111203e-01            mu+  vm  
+INFO:    1.111203e-01            e+  ve  
+INFO:    1.110377e-01            ta+  vt  
+INFO:    
+INFO:    
+INFO: decay channels for t23~ : ( width = 3.844146 GeV ) 
+INFO:        BR                 d1  d2 
+INFO:    5.185421e-01            t~  z  
+INFO:    4.380963e-01            b~  w-  
+INFO:    4.336162e-02            t~  h  
+INFO:    
+INFO:    
+INFO: decay channels for t : ( width = 1.466877 GeV ) 
+INFO:        BR                 d1  d2 
+INFO:    1.000000e+00            b  w+  
+INFO:    
+INFO:    
+INFO: decay channels for t23 : ( width = 3.844146 GeV ) 
+INFO:        BR                 d1  d2 
+INFO:    5.185421e-01            t  z  
+INFO:    4.380963e-01            b  w+  
+INFO:    4.336162e-02            t  h  
+INFO:    
+INFO:    
+INFO: decay channels for z : ( width = 2.411888 GeV ) 
+INFO:        BR                 d1  d2 
+INFO:    1.520543e-01            s~  s  
+INFO:    1.520543e-01            d~  d  
+INFO:    1.504122e-01            b~  b  
+INFO:    1.178122e-01            c~  c  
+INFO:    1.178122e-01            u~  u  
+INFO:    6.877657e-02            vt~  vt  
+INFO:    6.877657e-02            vm~  vm  
+INFO:    6.877657e-02            ve~  ve  
+INFO:    3.453449e-02            mu+  mu-  
+INFO:    3.453449e-02            e+  e-  
+INFO:    3.445616e-02            ta+  ta-  
+INFO:    
+INFO: generating the production square matrix element 
+INFO: generate p p > rho0 > topo tt  --no_warning=duplicate; 
+INFO: Done 4.597 
+INFO: generating the full square matrix element (with decay) 
+INFO: generate p p > rho0 > topo tt, (t~ > b~ w- , w- > all all  QCD=99), (topo > z tt / rho+ rho- rho0 , z > all all , ( t > b w+ , w+ > all all ) , ( t~ > b~ w- , w- > all all )  QCD=99), (t > b w+ , w+ > all all  QCD=99)   --no_warning=duplicate; 
+INFO: Done 746.2 
+INFO: generate matrix element for decay only (1 - > N). 
+INFO: output standalone_msF /afs/desy.de/user/u/usaiem/xxl-af-cms/gen2/test/Zp_Zt_t_madspin/decay_me 
+INFO: Done 16.23 
+INFO: Compiling code 
+INFO: running MadSpin 
+INFO: detect independant decays 
+Command "generate_events test2" interrupted with error:
+KeyError : -4
+Please report this bug on https://bugs.launchpad.net/madgraph5
+More information is found in '/afs/desy.de/user/u/usaiem/xxl-af-cms/gen2/test/Zp_Zt_t_madspin/test2_tag_1_debug.log'.
+Please attach this file to your report.
+quit
+INFO:  
+ 
+INFO:  
+ 
+

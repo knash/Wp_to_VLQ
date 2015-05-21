@@ -1,0 +1,48 @@
+#************************************************************
+#*                     MadGraph5_aMC@NLO                    *
+#*                                                          *
+#*                *                       *                 *
+#*                  *        * *        *                   *
+#*                    * * * * 5 * * * *                     *
+#*                  *        * *        *                   *
+#*                *                       *                 *
+#*                                                          *
+#*                                                          *
+#*         VERSION 2.2.1                 2014-09-25         *
+#*                                                          *
+#*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+#*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+#*                                                          *
+#************************************************************
+#*                                                          *
+#*               Command File for MadGraph5_aMC@NLO         *
+#*                                                          *
+#*     run as ./bin/mg5_aMC  filename                       *
+#*                                                          *
+#************************************************************
+set group_subprocesses Auto
+set ignore_six_quark_processes False
+set loop_optimized_output True
+set complex_mass_scheme False
+import model sm
+define p = g u c d s u~ c~ d~ s~
+define j = g u c d s u~ c~ d~ s~
+define l+ = e+ mu+
+define l- = e- mu-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+import model onerho
+define bb = b b~
+define WW = w+ w-
+define tt = t t~
+define ferm =  ve vm vt ve~ vm~ vt~ u c d s b u~ c~ d~ s~ b~ e- mu- ta- e+ mu+ ta+
+define Topo = t23 t23~
+#generate p p > rho0 > topo tt QCD=0 #QED=2 QS1=2 @0
+#add process p p > rho0 > topo tt j QCD=1 #QED=2 QS1=2 @1 
+#add process p p > rho0 > topo tt j j QCD=2 #QED=2 QS1=2 @2
+#add process p p > rho0 > topo tt j j j QCD=3 #QED=2 QS1=2 @3
+generate p p > rho0 t23 > t~ w+ b
+add process p p > rho0 t23~ > w- b~ t
+add process p p > rho0 t23 > t~ w+ b j
+add process p p > rho0 t23~ > w- b~ t j
+output Wb_MS_j
