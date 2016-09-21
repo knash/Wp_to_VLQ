@@ -330,8 +330,8 @@ V_53 = Vertex(name = 'V_53',
 V_54 = Vertex(name = 'V_54',
               particles = [ P.b__tilde__, P.T23, P.rho__minus__ ],
               color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_44})
+              lorentz = [ L.FFV2, L.FFV6],
+              couplings = {(0,0):C.GC_44,(0,1):C.GC_44_R})
 
 V_55 = Vertex(name = 'V_55',
               particles = [ P.X53__tilde__, P.X53, P.rho0 ],
@@ -468,8 +468,8 @@ V_76 = Vertex(name = 'V_76',
 V_77 = Vertex(name = 'V_77',
               particles = [ P.T23__tilde__, P.b, P.rho__plus__ ],
               color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_44})
+              lorentz = [ L.FFV2, L.FFV6 ],
+              couplings = {(0,0):C.GC_44,(0,1):C.GC_44_R})
 
 V_78 = Vertex(name = 'V_78',
               particles = [ P.u__tilde__, P.d, P.rho__plus__ ],

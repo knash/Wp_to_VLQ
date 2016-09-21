@@ -113,13 +113,21 @@ grhopT23LbL = Parameter(name = 'grhopT23LbL',
                         lhablock = 'FRBlock',
                         lhacode = [ 6 ])
 
+grhopT23RbR = Parameter(name = 'grhopT23RbR',
+                        nature = 'external',
+                        type = 'real',
+                        value = 0.1,
+                        texname = '\\text{grhopT23RbR}',
+                        lhablock = 'FRBlock',
+                        lhacode = [ 7 ])
+
 grhopX23LbL = Parameter(name = 'grhopX23LbL',
                         nature = 'external',
                         type = 'real',
                         value = 0.1,
                         texname = '\\text{grhopX23LbL}',
                         lhablock = 'FRBlock',
-                        lhacode = [ 7 ])
+                        lhacode = [ 999 ])
 
 grhopX53LX23L = Parameter(name = 'grhopX53LX23L',
                           nature = 'external',

@@ -185,6 +185,11 @@ GC_44 = Coupling(name = 'GC_44',
                  value = '(complex(0,1)*grhopT23LbL)/cmath.sqrt(2)',
                  order = {'CRT':1})
 
+GC_44_R = Coupling(name = 'GC_44_R',
+                 value = '(complex(0,1)*grhopT23RbR)/cmath.sqrt(2)',
+                 order = {'CRT':1})
+
+
 GC_45 = Coupling(name = 'GC_45',
                  value = '(complex(0,1)*grhopT23RB13R)/cmath.sqrt(2)',
                  order = {'CRT':1})
