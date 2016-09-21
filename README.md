@@ -1,4 +1,4 @@
-# Vp_to_VLQ
+# Wp_to_VLQ
 Heavy spin1 boson to top partners
 
 original model from
